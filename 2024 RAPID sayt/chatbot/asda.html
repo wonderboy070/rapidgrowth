@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Interface</title>
+  <link rel="stylesheet" href="zz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="navbar-link">Home</a>
+      <a href="#about" class="navbar-link">About</a>
+      <a href="#chatbot-section" class="navbar-link">Chatbot</a>
+      <a href="#contact" class="navbar-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section">
+    <h1>Welcome to Our Chatbot</h1>
+    <p>This is a simple chatbot interface.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>Learn more about our chatbot services.</p>
+  </section>
+
+  <!-- Chatbot Section -->
+  <section id="chatbot-section" class="section">
+    <div class="title">
+      <h3>Chatbot</h3>
+    </div>
+
+    <div id="chatbot" class="main-card collapsed">
+      <button id="chatbot_toggle">
+        <i class="fas fa-comments"></i>
+      </button>
+      <div class="main-title">
+        <span>Chatbot</span>
+      </div>
+      <div class="chat-area" id="message-box"></div>
+      <div class="line"></div>
+      <div class="input-div">
+        <input class="input-message" name="message" type="text" id="message" placeholder="Type your message ..." />
+        <button class="input-send" onclick="send()">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us via email.</p>
+  </section>
+
+  <script src="sss.js"></script>
+</body>
+</html>
